@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="25sp"
+    android:background="@color/surface"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="400sp"
+                android:id="@+id/poster"
+                android:layout_marginBottom="20sp"
+                android:layout_height="wrap_content"></ImageView>
+
+            <TextView
+                android:text="Title Here"
+                android:id="@+id/title"
+                    android:textColor="@color/white"
+                android:textSize="@dimen/title_font"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:layout_marginTop="5sp"
+                android:text="Runtime | Here"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/subtitle"
+                android:id="@+id/runtime_release"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/subtitle"
+                android:text="Rated | Genre"
+                android:id="@+id/rated_genre"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:textSize="@dimen/subtitle"
+                android:text="Rated | Genre"
+                android:id="@+id/actors"
+                android:textColor="@color/light_black"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:textSize="@dimen/subtitle"
+                android:textColor="@color/light_black"
+                android:layout_marginTop="20sp"
+                android:gravity="left"
+                android:id="@+id/rating_votes"
+                android:text="7.7 | Votes 12312,12321"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:gravity="left"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/description"
+                android:id="@+id/description"
+                android:text="Lorem ipsum dolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+            <Button
+                android:layout_width="match_parent"
+                android:text="CLOSE"
+                android:id="@+id/close"
+                android:layout_marginTop="10sp"
+                android:backgroundTint="@color/colorButton"
+                android:layout_height="50sp"></Button>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
